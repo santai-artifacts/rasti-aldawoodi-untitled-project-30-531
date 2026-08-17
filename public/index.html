@@ -169,6 +169,10 @@
     font-size: 13.5px; transition: all .18s ease; line-height: 1.4;
   }
   .chip:hover { border-color: var(--accent); transform: translateY(-2px); background: var(--surface-2); }
+  /* Selected chip: white fill with dark text so it stays legible */
+  .chip[data-i="0"] { background: #ffffff; color: #171b24; }
+  .chip[data-i="0"]:hover { background: #eef1f7; }
+  .chip[data-i="0"] span { color: #5a6270; }
   .chip strong { display: block; font-weight: 600; margin-bottom: 2px; }
   .chip span { color: var(--text-dim); font-size: 12.5px; }
 
